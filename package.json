@@ -1,0 +1,7 @@
+{
+  "name": "config-presets",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Rasmus Vermeulen <vermeulen.rasmus@gmail.com>",
+  "license": "MIT"
+}
