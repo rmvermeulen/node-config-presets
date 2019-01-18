@@ -1,9 +1,11 @@
 {
   "name": "config-presets",
+  "description": "Presets for some things I often use",
+  "license": "MIT",
+  "author": "Rasmus Vermeulen <vermeulen.rasmus@gmail.com>",
+  "repository": "git@github.com:rmvermeulen/node-config-presets.git",
   "version": "1.0.0",
   "main": "use-presets.js",
-  "author": "Rasmus Vermeulen <vermeulen.rasmus@gmail.com>",
-  "license": "MIT",
   "bin": {
     "config-presets": "use-presets.js"
   }
