@@ -48,9 +48,9 @@ if (cmd === 'deps') {
     'jest',
     'jest-extended',
     'ts-jest',
-    '@types/jest',
-    '@types/jest-extended',
+    'jest-extended',
     'prettier-package-json',
+    '@types/jest',
   );
   process.exit();
 }
