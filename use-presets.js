@@ -36,6 +36,24 @@ if (cmd === 'ls' || cmd === 'list') {
     process.exit();
   });
 }
+if (cmd === 'deps') {
+  console.log(
+    'typescript',
+    'husky',
+    'lint-staged',
+    'tslint',
+    'tslint-config-prettier',
+    'tslint-eslint-rules',
+    'prettier',
+    'jest',
+    'jest-extended',
+    'ts-jest',
+    '@types/jest',
+    '@types/jest-extended',
+    'prettier-package-json',
+  );
+  process.exit();
+}
 
 const files = args;
 if (files.length) {
