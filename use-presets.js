@@ -31,7 +31,7 @@ if (cmd === 'ls' || cmd === 'list') {
       return console.error('something went wrong');
     }
     for (const file of files) {
-      console.log(file);
+      console.log(file.replace('preset_', ''));
     }
     process.exit();
   });
@@ -42,7 +42,7 @@ if (files.length) {
   // use __dirname to find the presets in node_modules
   const filesAndPaths = files.map((file) => ({
     file,
-    path: resolve(presetDir, file),
+    path: resolve(presetDir, 'preset_' + file),
   }));
 
   // use cwd() to copy to caller's directory
