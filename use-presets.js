@@ -45,11 +45,15 @@ if (cmd === 'deps') {
     'tslint-config-prettier',
     'tslint-eslint-rules',
     'prettier',
+    'prettier-package-json',
     'jest',
     'jest-extended',
     'ts-jest',
     'jest-extended',
-    'prettier-package-json',
+    'jest-watch-suspend',
+    'jest-watch-typeahead',
+    'jest-watch-toggle-config',
+    'expect-more-jest',
     '@types/jest',
   );
   process.exit();
