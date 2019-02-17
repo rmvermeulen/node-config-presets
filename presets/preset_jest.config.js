@@ -1,13 +1,7 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: [
-    'jest-extended',
-    'jest-watch-suspend',
-    'jest-watch-typeahead',
-    'jest-watch-toggle-config',
-    'expect-more-jest',
-  ],
+  setupFilesAfterEnv: ['jest-extended', 'expect-more-jest'],
   setupTestFrameworkScriptFile: './setupJest.ts',
   verbose: true,
   collectCoverage: true,
@@ -19,4 +13,10 @@ module.exports = {
       },
     },
   },
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+    'jest-watch-suspend',
+    'jest-watch-toggle-config',
+  ],
 };
