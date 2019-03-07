@@ -38,23 +38,23 @@ if (cmd === 'ls' || cmd === 'list') {
 }
 if (cmd === 'deps') {
   console.log(
-    'typescript',
+    '@types/jest',
+    'expect-more-jest',
     'husky',
-    'lint-staged',
-    'tslint',
-    'tslint-config-prettier',
-    'tslint-eslint-rules',
-    'prettier',
-    'prettier-package-json',
-    'jest',
     'jest-extended',
-    'ts-jest',
     'jest-extended',
     'jest-watch-suspend',
-    'jest-watch-typeahead',
     'jest-watch-toggle-config',
-    'expect-more-jest',
-    '@types/jest',
+    'jest-watch-typeahead',
+    'jest',
+    'lint-staged',
+    'prettier-package-json',
+    'pretty-quick',
+    'ts-jest',
+    'tslint-config-prettier',
+    'tslint-eslint-rules',
+    'tslint',
+    'typescript',
   );
   process.exit();
 }
