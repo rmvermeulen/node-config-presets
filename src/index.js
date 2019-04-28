@@ -2,7 +2,7 @@
 // @ts-check
 const printHelp = () => {
   // @ts-ignore
-  const { version } = require("./package.json");
+  const { version } = require('./package.json');
 
   console.log(`node config presets v${version}
 copy preset config files into current directory
@@ -30,22 +30,22 @@ module.exports = async (presetDir, args) => {
 
   const [cmd, ...tail] = args;
 
-  if (["-h", "--help", "help"].includes(cmd)) {
+  if (['-h', '--help', 'help'].includes(cmd)) {
     printHelp();
     return;
   }
 
   let cmdFn;
   switch (cmd) {
-    case "init":
-      cmdFn = require("./commands/init");
+    case 'init':
+      cmdFn = require('./commands/init');
       break;
-    case "ls":
-    case "list":
-      cmdFn = require("./commands/list");
+    case 'ls':
+    case 'list':
+      cmdFn = require('./commands/list');
       break;
-    case "deps":
-      cmdFn = require("./commands/deps");
+    case 'deps':
+      cmdFn = require('./commands/deps');
       break;
   }
 
@@ -55,6 +55,6 @@ module.exports = async (presetDir, args) => {
 
   const files = args;
   if (files.length) {
-    return require("./copy-files")(presetDir, files);
+    return require('./copy-files')(presetDir, files);
   }
 };

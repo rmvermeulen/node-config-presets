@@ -1,9 +1,9 @@
-const { resolve } = require("path");
+const { resolve } = require('path');
 
-const main = require("./src");
+const main = require('./src');
 
 const args = process.argv.slice(2);
-const presetDir = resolve(__dirname, "presets/");
+const presetDir = resolve(__dirname, 'presets/');
 
 main(presetDir, args)
   .then(() => process.exit())
