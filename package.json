@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "bluebird": "^3.5.4",
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "typescript": "^3.4.5",
+    "uglify-js": "^3.5.9"
   },
   "scripts": {
     "install": "tsc --allowJs --outFile main.js index.js > /dev/null; uglifyjs main.js -o main.js"
@@ -20,7 +22,6 @@
     "@types/bluebird": "^3.5.26",
     "@types/node": "^11.13.8",
     "@types/ramda": "^0.26.8",
-    "prettier": "^1.17.0",
-    "uglify-js": "^3.5.9"
+    "prettier": "^1.17.0"
   }
 }
