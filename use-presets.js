@@ -25,13 +25,15 @@ const printHelp = () => {
 copy preset config files into current directory
 
 usage:
-  $ config-presets [options] [command] [filenames]
+  $ config-presets [-h/--help]   # print help
+  $ config-presets [command]     # run command
+  $ config-presets [...files]    # copy given files
 
 options:
   -h,--help       print this help information
 
 commands:
-  ls              list config files
+  ls,list         list config files
   deps            list all transient devDependencies
   `);
 };
