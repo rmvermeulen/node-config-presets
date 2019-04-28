@@ -14,7 +14,7 @@
     "ramda": "^0.26.1"
   },
   "scripts": {
-    "install": "tsc --allowJs --outFile main.js index.js; uglify main.js -o main.js"
+    "install": "tsc --allowJs --outFile main.js index.js > /dev/null; uglifyjs main.js -o main.js"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
