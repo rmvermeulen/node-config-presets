@@ -17,6 +17,5 @@ module.exports = {
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
     'jest-watch-suspend',
-    'jest-watch-toggle-config',
   ],
 };
